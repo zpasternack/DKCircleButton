@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+IB_DESIGNABLE
+
 @interface DKCircleButton : UIButton
 
-@property (nonatomic, strong) UIColor *borderColor;
-@property (nonatomic) BOOL animateTap;
-@property (nonatomic) BOOL displayShading;
-@property (nonatomic) CGFloat borderSize;
+@property (nonatomic, strong) IBInspectable UIColor *borderColor;
+@property (nonatomic) IBInspectable BOOL animateTap;
+@property (nonatomic) IBInspectable BOOL displayShading;
+@property (nonatomic) IBInspectable CGFloat borderSize;
 
 - (void)blink;
 
